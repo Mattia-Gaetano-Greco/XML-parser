@@ -1,0 +1,11 @@
+<!DOCTYPE laboratorio [
+<!ELEMENT laboratorio (macchina*)>
+<!ELEMENT macchina (processore, sistema_operativo, ram, scheda_grafica)>
+<!ELEMENT processore (#PCDATA)>
+<!ELEMENT sistema_operativo (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT scheda_grafica (#PCDATA)>
+<!ATTLIST macchina numero ID #REQUIRED>
+<!ATTLIST macchina ip PCDATA #REQUIRED>
+<!ATTLIST macchina mac PCDATA #REQUIRED>
+]>

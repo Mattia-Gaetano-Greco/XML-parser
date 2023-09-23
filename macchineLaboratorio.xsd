@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="laboratorio">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="macchina" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="processore" type="xs:string"/>
+                        <xs:element name="sistema_operativo" type="xs:string"/>
+                        <xs:element name="ram" type="xs:positiveInteger"/>
+                        <xs:element name="scheda_grafica" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="numero" type="xs:positiveInteger"/>
+                    <xs:attribute name="ip" type="xs:string"/>
+                    <xs:attribute name="mac" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="aula" type="xs:string"/>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>
